@@ -3,7 +3,6 @@ import { NestFactory } from '@nestjs/core';
 import { MicroserviceOptions } from '@nestjs/microservices';
 import { Transport } from '@nestjs/microservices/enums/transport.enum';
 import { AppModule } from './app.module';
-import { mqttOptions } from './mqttoptions';
 
 async function bootstrap() {
   const app = await NestFactory.createMicroservice<MicroserviceOptions>(
